@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">Smaug</string>
+    <string name="hint">在此输入层级文件序列号</string>
+    <string name="btn_analysis">解析Voronoi图</string>
+    <string name="fetchImgFromUrl">获取Voronoi图</string>
+    <string name="project_name">基于Android的植物图库数据可视化</string>
+    <string name="entrance">进入</string>
+    <string name="control">控制面板</string>
+    <string name="choose">选择文件：</string>
+
+</resources>

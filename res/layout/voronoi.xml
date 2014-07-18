@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/titletext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title_bg"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="@string/control" />
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/urltextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title_layout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="85dp"
+        android:text="@string/choose" />
+    
+    <EditText
+        android:id="@+id/voronoiurl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/urltextview"
+        android:layout_alignBaseline="@id/urltextview"
+        android:layout_alignBottom="@id/urltextview"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:hint="@string/hint" >
+
+        <requestFocus />
+    </EditText>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="95dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/analysis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/btn_analysis" />
+
+    
+
+</RelativeLayout>
